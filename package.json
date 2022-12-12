@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "description": "Create an Application using GlueStack framework",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gluestack/create-gluestack-app"
+  },
+  "keywords": [
+    "npm",
+    "create-gluestack-app"
+  ],
+  "author": "Shivam Singhal",
+  "license": "ISC"
+}
