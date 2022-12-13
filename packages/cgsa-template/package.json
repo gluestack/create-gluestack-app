@@ -13,6 +13,6 @@
   "author": "Shivam Singhal",
   "license": "ISC",
   "dependencies": {
-    "@gluestack/framework": "^0.0.2"
+    "@gluestack/framework": "^0.0.3"
   }
 }
