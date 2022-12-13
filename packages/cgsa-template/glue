@@ -1,20 +1,3 @@
 #!/usr/bin/env node
 
-const {
-  init,
-  addCommands,
-  close,
-} = require("@gluestack/framework/helpers/commander");
-
-const start = async () => {
-  // initialise the commander
-  await init();
-
-  // register commands to the commander
-  await addCommands();
-
-  // close commander
-  await close();
-};
-
-start();
+require("@gluestack/framework")();

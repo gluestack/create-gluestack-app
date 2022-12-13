@@ -1,6 +1,6 @@
 {
   "name": "cgsa-template",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Create an Application using GlueStack framework",
   "repository": {
     "type": "git",
@@ -13,6 +13,6 @@
   "author": "Shivam Singhal",
   "license": "ISC",
   "dependencies": {
-    "@gluestack/framework": "^0.0.1"
+    "@gluestack/framework": "^0.0.2"
   }
 }
