@@ -1,1 +1,8 @@
-{}
+{
+  "@gluestack/glue-plugin-dev-router": {
+    "package": "node_modules/@gluestack/glue-plugin-dev-router"
+  },
+  "@gluestack/glue-plugin-dev-process-manager": {
+    "package": "node_modules/@gluestack/glue-plugin-dev-process-manager"
+  }
+}

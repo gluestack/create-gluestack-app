@@ -1,1 +1,16 @@
-{}
+{
+  "@gluestack/glue-plugin-dev-router": [
+    {
+      "instance": "dev-router",
+      "directory": "./dev-router",
+      "container_store": {}
+    }
+  ],
+  "@gluestack/glue-plugin-dev-process-manager": [
+    {
+      "instance": "dev-process-manager",
+      "directory": "",
+      "container_store": {}
+    }
+  ]
+}
