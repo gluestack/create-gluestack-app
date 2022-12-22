@@ -1,11 +1,11 @@
 {
   "name": "create-gluestack-app",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "index.js",
   "bin": {
     "create-gluestack-app": "./index.js"
   },
-  "description": "Create an Application using GlueStack framework",
+  "description": "Create an Application using gluestack framework",
   "repository": {
     "type": "git",
     "url": "https://github.com/gluestack/create-gluestack-app"

@@ -117,7 +117,7 @@ function createApp(name, template) {
   fs.ensureDirSync(name);
   console.log();
 
-  console.log(`Creating a new GlueStack app in ${chalk.green(root)}.`);
+  console.log(`Creating a new gluestack app in ${chalk.green(root)}.`);
   console.log();
 
   const packageJson = {
