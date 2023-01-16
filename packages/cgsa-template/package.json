@@ -1,6 +1,6 @@
 {
   "name": "cgsa-template",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "Create an Application using GlueStack framework",
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
     "@gluestack/glue-plugin-dev-process-manager": "^0.0.3"
   },
   "peerDependencies": {
-    "@gluestack/framework": "^0.0.14",
+    "@gluestack/framework": "^0.0.16",
     "@gluestack/glue-plugin-dev-process-manager": "^0.0.3"
   }
 }
