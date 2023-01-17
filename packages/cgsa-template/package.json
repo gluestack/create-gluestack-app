@@ -13,11 +13,11 @@
   "author": "Shivam Singhal",
   "license": "ISC",
   "dependencies": {
-    "@gluestack/framework": "^0.0.16",
-    "@gluestack/glue-plugin-dev-process-manager": "^0.0.3"
+    "@gluestack/framework": "^0.0.x",
+    "@gluestack/glue-plugin-dev-process-manager": "^0.0.x"
   },
   "peerDependencies": {
-    "@gluestack/framework": "^0.0.16",
-    "@gluestack/glue-plugin-dev-process-manager": "^0.0.3"
+    "@gluestack/framework": "^0.0.x",
+    "@gluestack/glue-plugin-dev-process-manager": "^0.0.x"
   }
 }
