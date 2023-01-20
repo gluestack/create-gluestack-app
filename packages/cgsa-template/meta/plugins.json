@@ -1,2 +1,5 @@
 {
+  "@gluestack/glue-plugin-engine": {
+    "package": "node_modules/@gluestack/glue-plugin-engine"
+  }
 }
