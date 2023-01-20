@@ -1,7 +1,7 @@
 {
   "@gluestack/glue-plugin-engine": [
     {
-      "instance": "dev-process-manager",
+      "instance": "gluestack-engine",
       "directory": "",
       "container_store": {}
     }
