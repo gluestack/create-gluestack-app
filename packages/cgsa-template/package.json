@@ -10,14 +10,13 @@
     "npm",
     "create-gluestack-app"
   ],
-  "author": "Shivam Singhal",
   "license": "ISC",
   "dependencies": {
     "@gluestack/framework": "^0.0.x",
-    "@gluestack/glue-plugin-dev-process-manager": "^0.0.x"
+    "@gluestack/glue-plugin-engine": "^0.0.x"
   },
   "peerDependencies": {
     "@gluestack/framework": "^0.0.x",
-    "@gluestack/glue-plugin-dev-process-manager": "^0.0.x"
+    "@gluestack/glue-plugin-engine": "^0.0.x"
   }
 }
