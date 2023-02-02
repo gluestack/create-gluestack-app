@@ -5,12 +5,12 @@ const currentNodeVersion = process.versions.node;
 const semver = currentNodeVersion.split(".");
 const major = semver[0];
 
-if (major < 14) {
+if (major < 18 || major >= 19) {
   console.error(
     "You are running Node " +
       currentNodeVersion +
       ".\n" +
-      "Create React App requires Node 14 or higher. \n" +
+      "Create Gluestack App requires Node 18. \n" +
       "Please update your version of Node.",
   );
   process.exit(1);
