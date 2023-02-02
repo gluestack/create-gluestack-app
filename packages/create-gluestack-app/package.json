@@ -14,6 +14,9 @@
     "npm",
     "create-gluestack-app"
   ],
+  "engines": {
+    "node": ">=18 <19"
+  },
   "author": "Shivam Singhal",
   "license": "ISC",
   "dependencies": {
