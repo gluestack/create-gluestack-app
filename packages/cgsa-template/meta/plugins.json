@@ -1,5 +1,8 @@
 {
   "@gluestack/glue-plugin-engine": {
     "package": "node_modules/@gluestack/glue-plugin-engine"
+  },
+  "@gluestack/glue-plugin-router-nginx": {
+    "package": "node_modules/@gluestack/glue-plugin-router-nginx"
   }
 }

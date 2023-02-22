@@ -16,7 +16,8 @@
   "license": "ISC",
   "dependencies": {
     "@gluestack/framework": "^0.0.x",
-    "@gluestack/glue-plugin-engine": "^0.0.x"
+    "@gluestack/glue-plugin-engine": "^0.0.x",
+    "@gluestack/glue-plugin-router-nginx": "^0.0.3"
   },
   "peerDependencies": {
     "@gluestack/framework": "^0.0.x"
