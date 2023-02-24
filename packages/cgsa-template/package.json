@@ -1,6 +1,6 @@
 {
   "name": "cgsa-template",
-  "version": "0.0.32",
+  "version": "0.0.33",
   "description": "Create an Application using GlueStack framework",
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   "dependencies": {
     "@gluestack/framework": "^0.0.x",
     "@gluestack/glue-plugin-engine": "^0.0.x",
-    "@gluestack/glue-plugin-router-nginx": "^0.0.3"
+    "@gluestack/glue-plugin-router-nginx": "^0.0.x"
   },
   "peerDependencies": {
     "@gluestack/framework": "^0.0.x"
