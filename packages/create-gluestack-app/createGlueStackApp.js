@@ -130,7 +130,7 @@ function createApp(name, template) {
 
   fs.writeFileSync(
     path.join(root, ".npmrc"),
-    `legacy-peer-deps=true
+    `legacy-peer-deps=true\n
     engine-strict=true` + os.EOL
   )
 
