@@ -130,8 +130,7 @@ function createApp(name, template) {
 
   fs.writeFileSync(
     path.join(root, ".npmrc"),
-    `legacy-peer-deps=true\n
-    engine-strict=true` + os.EOL
+    `legacy-peer-deps=true\nengine-strict=true` + os.EOL
   )
 
   const originalDirectory = process.cwd();
