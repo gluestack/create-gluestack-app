@@ -16,7 +16,6 @@ if (major < 18 || major >= 19) {
   process.exit(1);
 }
 
-// const { init } = require("./create");
 const { init } = require("./createGlueStackApp");
 
 init();

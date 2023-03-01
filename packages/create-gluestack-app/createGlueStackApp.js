@@ -128,6 +128,12 @@ function createApp(name, template) {
     JSON.stringify(packageJson, null, 2) + os.EOL,
   );
 
+  fs.writeFileSync(
+    path.join(root, ".npmrc"),
+    `legacy-peer-deps=true
+    engine-strict=true` + os.EOL
+  )
+
   const originalDirectory = process.cwd();
   process.chdir(root);
   run(root, appName, originalDirectory, template);
