@@ -1,6 +1,5 @@
 {
   "name": "cgsa-template",
-  "private": "true",
   "version": "0.0.35",
   "description": "Create an Application using GlueStack framework",
   "repository": {

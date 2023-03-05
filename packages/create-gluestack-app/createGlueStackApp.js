@@ -122,6 +122,7 @@ function createApp(name, template) {
 
   const packageJson = {
     name: appName,
+    private: true
   };
   fs.writeFileSync(
     path.join(root, "package.json"),
