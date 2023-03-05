@@ -124,6 +124,7 @@ function createApp(name, template) {
     name: appName,
     private: true
   };
+
   fs.writeFileSync(
     path.join(root, "package.json"),
     JSON.stringify(packageJson, null, 2) + os.EOL,
@@ -201,8 +202,11 @@ function copyToRoot(root, appName, originalDirectory, template) {
       if (fs.existsSync(`${root}/package.json`)) {
         const raw = fs.readFileSync(`${root}/package.json`);
         const json = JSON.parse(raw);
+
         json.name = appName;
         json.version = "0.0.1";
+        json.private = true;
+
         fs.writeFileSync(
           path.join(root, "package.json"),
           JSON.stringify(json, null, 2) + os.EOL,
