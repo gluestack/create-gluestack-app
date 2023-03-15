@@ -22,7 +22,7 @@ function init() {
     .arguments("<project-directory>")
     .usage(`${chalk.green("<project-directory>")} [options]`)
     .action((name) => {
-      projectName = name;
+      projectName = name.replace(/[^\w\s-]/gi, "").toLowerCase();
     })
     .allowUnknownOption()
     .on("--help", () => {
@@ -122,7 +122,7 @@ function createApp(name, template) {
 
   const packageJson = {
     name: appName,
-    private: true
+    private: true,
   };
 
   fs.writeFileSync(
@@ -132,8 +132,8 @@ function createApp(name, template) {
 
   fs.writeFileSync(
     path.join(root, ".npmrc"),
-    `legacy-peer-deps=true\nengine-strict=true` + os.EOL
-  )
+    `legacy-peer-deps=true\nengine-strict=true` + os.EOL,
+  );
 
   const originalDirectory = process.cwd();
   process.chdir(root);
