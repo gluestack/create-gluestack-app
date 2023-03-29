@@ -1,0 +1,20 @@
+{
+  "@gluestack/glue-plugin-engine": {
+    "package": "node_modules/@gluestack/glue-plugin-engine"
+  },
+  "@gluestack/glue-plugin-router-nginx": {
+    "package": "node_modules/@gluestack/glue-plugin-router-nginx"
+  },
+  "@gluestack/glue-plugin-storybook": {
+    "package": "node_modules/@gluestack/glue-plugin-storybook"
+  },
+  "@gluestack/glue-plugin-backend-engine": {
+    "package": "node_modules/@gluestack/glue-plugin-backend-engine"
+  },
+  "@gluestack/glue-plugin-mobile-expo": {
+    "package": "node_modules/@gluestack/glue-plugin-mobile-expo"
+  },
+  "@gluestack/glue-plugin-web": {
+    "package": "node_modules/@gluestack/glue-plugin-web"
+  }
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "domain": "api.local.gluestack.app",
+    "port": 10088,
+    "locations": [
+      {
+        "path": "/backend/engine/(.*)",
+        "proxy_instance": "engine:3500",
+        "proxy_path": "/v1.0/invoke/engine/method/$1",
+        "size_in_mb": 50,
+        "packageName": "@gluestack/glue-plugin-backend-engine",
+        "instance": "engine",
+        "routes": [
+          {
+            "method": "GET",
+            "path": "/health-check"
+          },
+          {
+            "method": "POST",
+            "path": "/actions/{action_name}"
+          },
+          {
+            "method": "POST",
+            "path": "/events"
+          },
+          {
+            "method": "POST",
+            "path": "/app/events"
+          },
+          {
+            "method": "POST",
+            "path": "/client/invoke"
+          },
+          {
+            "method": "POST",
+            "path": "/server/invoke"
+          },
+          {
+            "method": "GET",
+            "path": "/glue/config"
+          },
+          {
+            "method": "POST",
+            "path": "/queue/push"
+          }
+        ],
+        "instancePath": "/Users/faizahmedfarooqui/Sites/projects/gluestack/create-gluestack-app/packages/cgsa-boilerplate/backend/engine"
+      }
+    ]
+  },
+  {
+    "domain": "website.local.gluestack.app",
+    "port": 7002,
+    "locations": [
+      {
+        "path": "/(.*)",
+        "proxy_instance": "website:9000",
+        "proxy_path": "/$1",
+        "size_in_mb": "50",
+        "packageName": "@gluestack/glue-plugin-web",
+        "instance": "website",
+        "routes": [
+          {
+            "method": "GET",
+            "path": "/"
+          }
+        ],
+        "instancePath": "/Users/faizahmedfarooqui/Sites/projects/gluestack/create-gluestack-app/packages/cgsa-boilerplate/website"
+      }
+    ]
+  }
+]

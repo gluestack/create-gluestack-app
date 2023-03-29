@@ -1,0 +1,43 @@
+{
+  "name": "boilerplate",
+  "version": "0.0.1",
+  "description": "GlueStack Boilerplate",
+  "scripts": {
+    "install-all": "npm install --workspces --if-present",
+    "build:components": "npm run build --workspace @project/components",
+    "watch:components": "npm run watch --workspace @project/components",
+    "start:mobile": "npm run start --workspace @project/mobile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gluestack/create-gluestack-app",
+    "directory": "cgsa-boileplate"
+  },
+  "keywords": [
+    "npm",
+    "create-gluestack-app"
+  ],
+  "engines": {
+    "node": ">=18 <19"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@gluestack/framework": "^0.0.x",
+    "@gluestack/glue-plugin-backend-engine": "^0.0.x",
+    "@gluestack/glue-plugin-engine": "^0.0.95",
+    "@gluestack/glue-plugin-mobile-expo": "^0.0.5",
+    "@gluestack/glue-plugin-router-nginx": "^0.0.x",
+    "@gluestack/glue-plugin-storybook": "^1.1.x",
+    "@gluestack/glue-plugin-web": "^0.1.32"
+  },
+  "peerDependencies": {
+    "@gluestack/framework": "^0.0.x"
+  },
+  "workspaces": [
+    "storybook",
+    "shared/components",
+    "backend/engine",
+    "mobile",
+    "website"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@project/components",
+  "version": "0.0.1",
+  "description": "Shared Components for Web, Mobile & Storybook",
+  "main": "dist/commonjs/index",
+  "module": "dist/module/index",
+  "types": "dist/typescript/index.d.ts",
+  "scripts": {
+    "build": "bob build",
+    "clean": "bob clean",
+    "lint": "bob lint",
+    "test": "bob test",
+    "watch": "tsc --watch"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-native": "^0.71.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-native": "^0.71.3",
+    "react-native-builder-bob": "^0.20.4",
+    "typescript": "^4.9.5"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "dist",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  }
+}

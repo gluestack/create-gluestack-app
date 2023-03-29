@@ -1,0 +1,1 @@
+SSL_CERTS="./meta/ssl-certs/local.gluestack.app"
