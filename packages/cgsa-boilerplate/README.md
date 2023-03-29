@@ -2,11 +2,11 @@
 
 ## Contains:
 
-- [x] website (nextjs)
-- [x] backend (express, cron, event)
-- [x] mobile (react-native with expo)
-- [x] storybook
+- [x] website (nextjs using shared-components)
+- [x] mobile (react-native with expo using shared-components)
+- [x] storybook (using shared-components)
 - [x] shared-components
+- [x] backend (express, cron, event)
 
 ## Installation
 
