@@ -6,7 +6,8 @@
     "install-all": "npm install --workspces --if-present",
     "build:components": "npm run build --workspace @project/components",
     "watch:components": "npm run watch --workspace @project/components",
-    "start:mobile": "npm run start --workspace @project/mobile"
+    "start:mobile": "npm run start --workspace @project/mobile",
+    "start:storybook": "npm run storybook --workspace @project/storybook"
   },
   "repository": {
     "type": "git",

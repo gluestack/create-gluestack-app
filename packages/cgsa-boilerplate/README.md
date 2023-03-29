@@ -32,8 +32,11 @@ $ npm run watch:components
 $ node glue develop:up
 ```
 
-# Run Others
+## Run Others Apps
 
 ```bash
+# Running mobile
 $ npm run start:mobile
+# Running storybook
+$ npm run start:storybook
 ```
