@@ -44,13 +44,13 @@
             "path": "/queue/push"
           }
         ],
-        "instancePath": "/Users/faizahmedfarooqui/Sites/projects/gluestack/create-gluestack-app/packages/cgsa-boilerplate/backend/engine"
+        "instancePath": "/Users/VidhiKataria/Documents/Projects/gluestack/create-gluestack-app/packages/cgsa-boilerplate/backend/engine"
       }
     ]
   },
   {
     "domain": "website.local.gluestack.app",
-    "port": 7002,
+    "port": 7000,
     "locations": [
       {
         "path": "/(.*)",
@@ -65,7 +65,7 @@
             "path": "/"
           }
         ],
-        "instancePath": "/Users/faizahmedfarooqui/Sites/projects/gluestack/create-gluestack-app/packages/cgsa-boilerplate/website"
+        "instancePath": "/Users/VidhiKataria/Documents/Projects/gluestack/create-gluestack-app/packages/cgsa-boilerplate/website"
       }
     ]
   }
