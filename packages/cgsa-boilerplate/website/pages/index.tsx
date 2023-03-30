@@ -3,7 +3,6 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import GluesatckUIProvider, { Text, Button } from "@project/components";
-console.log(GluesatckUIProvider, Text);
 
 const Meta = () => {
   return (
