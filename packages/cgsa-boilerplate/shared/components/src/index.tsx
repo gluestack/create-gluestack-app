@@ -15,12 +15,12 @@
 // }
 
 export { Button } from "./Button";
-// export { Actionsheet } from "./Actionsheet";
-// export { Alert } from "./Alert";
-// export { AlertDialog } from "./AlertDialog";
-// export { Avatar } from "./Avatar";
-// export { Badge } from "./Badge";
-// export { Box } from "./Box";
+export { Actionsheet } from "./Actionsheet";
+export { Alert } from "./Alert";
+export { AlertDialog } from "./AlertDialog";
+export { Avatar } from "./Avatar";
+export { Badge } from "./Badge";
+export { Box } from "./Box";
 // export { Center } from "./Center";
 // export { Checkbox } from "./Checkbox";
 // export { HStack } from "./HStack";
@@ -37,7 +37,6 @@ export { Button } from "./Button";
 // export { Modal } from "./Modal";
 // export { Popover } from "./Popover";
 // export { Progress } from "./Progress";
-// export { Text } from "./Text";
 // export { Radio } from "./Radio";
 // export { Select } from "./Select";
 // export { Slider } from "./Slider";
