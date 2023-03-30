@@ -14,7 +14,7 @@
 //   );
 // }
 
-// export { Button } from "./Button";
+export { Button } from "./Button";
 // export { Actionsheet } from "./Actionsheet";
 // export { Alert } from "./Alert";
 // export { AlertDialog } from "./AlertDialog";
@@ -48,5 +48,7 @@
 // export { Tabs } from "./Tabs";
 // export { Tooltip } from "./Tooltip";
 // export { VStack } from "./VStack";
-export { GluestackUIProvider } from "./Provider";
+import { GluestackUIProvider } from "./Provider";
+export { Text } from "./Text";
+export default GluestackUIProvider;
 // export * from "./Icons/Icons";

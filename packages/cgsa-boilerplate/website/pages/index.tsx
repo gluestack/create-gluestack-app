@@ -2,8 +2,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
-
-import SharedHeader from "@project/components";
+import GluesatckUIProvider, { Text, Button } from "@project/components";
+console.log(GluesatckUIProvider, Text);
 
 const Meta = () => {
   return (
@@ -71,11 +71,23 @@ const Example = () => {
   );
 };
 
+const GluestackComponents = () => {
+  return (
+    <GluesatckUIProvider>
+      <Text color="$green500">Hello World</Text>
+      <Button>
+        <Button.Text>Button</Button.Text>
+      </Button>
+    </GluesatckUIProvider>
+  );
+};
+
 const Home: NextPage = () => {
   return (
     <div className={styles.parent}>
       <Meta />
-      <SharedHeader id="id" title="Ti111tle" />
+      <GluestackComponents />
+      {/* <SharedHeader id="id" title="Ti111tle" /> */}
       <Example />
     </div>
   );
