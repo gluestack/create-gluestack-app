@@ -14,6 +14,6 @@ function SharedHeader(_ref) {
   } = _ref;
   return /*#__PURE__*/_react.default.createElement(_reactNative.View, null, /*#__PURE__*/_react.default.createElement(_reactNative.Text, {
     id: id
-  }, title));
+  }, title, "+1234"));
 }
 //# sourceMappingURL=index.js.map

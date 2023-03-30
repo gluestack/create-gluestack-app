@@ -7,6 +7,6 @@ export default function SharedHeader(_ref) {
   } = _ref;
   return /*#__PURE__*/React.createElement(View, null, /*#__PURE__*/React.createElement(Text, {
     id: id
-  }, title));
+  }, title, "+1234"));
 }
 //# sourceMappingURL=index.js.map

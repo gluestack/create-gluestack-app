@@ -1,4 +1,3 @@
-/// <reference types="react" />
 type ISharedHeader = {
     id: string;
     title: string;
