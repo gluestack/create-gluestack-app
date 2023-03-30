@@ -37,7 +37,7 @@
 // export { Modal } from "./Modal";
 // export { Popover } from "./Popover";
 // export { Progress } from "./Progress";
-// export { Text } from "./Text";
+export { Text } from "./Text";
 // export { Radio } from "./Radio";
 // export { Select } from "./Select";
 // export { Slider } from "./Slider";

@@ -20,10 +20,9 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "esnext"
+    "target": "esnext",
+    "outDir": "dist"
   },
-	"include": ["./src"],
-  "exclude": [
-		"node_modules"
-	]
+  "include": ["./src"],
+  "exclude": ["node_modules"]
 }
