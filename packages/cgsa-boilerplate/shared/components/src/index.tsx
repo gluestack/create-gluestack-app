@@ -1,26 +1,11 @@
-// import React from "react";
-// import { View, Text } from "react-native";
-
-// type ISharedHeader = {
-//   id: string;
-//   title: string;
-// };
-
-// export default function SharedHeader({ id, title }: ISharedHeader) {
-//   return (
-//     <View>
-//       <Text id={id}>{title}+1234</Text>
-//     </View>
-//   );
-// }
-
+export { Box } from "./Box";
+export { Text } from "./Text";
+export { Alert } from "./Alert";
+export { Badge } from "./Badge";
+export { Avatar } from "./Avatar";
 export { Button } from "./Button";
 export { Actionsheet } from "./Actionsheet";
-export { Alert } from "./Alert";
 export { AlertDialog } from "./AlertDialog";
-export { Avatar } from "./Avatar";
-export { Badge } from "./Badge";
-export { Box } from "./Box";
 export { Center } from "./Center";
 export { Checkbox } from "./Checkbox";
 export { HStack } from "./HStack";
@@ -48,6 +33,6 @@ export { Tabs } from "./Tabs";
 export { Tooltip } from "./Tooltip";
 export { VStack } from "./VStack";
 import { GluestackUIProvider } from "./Provider";
-export { Text } from "./Text";
+
 export default GluestackUIProvider;
 export * from "./Icons/Icons";
