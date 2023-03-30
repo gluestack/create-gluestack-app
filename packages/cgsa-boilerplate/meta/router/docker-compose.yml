@@ -1,1 +1,41 @@
-[]
+version: "3.9"
+services:
+  engine:
+    container_name: engine
+    restart: always
+    build: /Users/faizahmedfarooqui/Sites/projects/gluestack/create-gluestack-app/packages/cgsa-boilerplate/backend/engine
+    volumes:
+      - /Users/faizahmedfarooqui/Sites/projects/gluestack/create-gluestack-app/packages/cgsa-boilerplate/backend/engine:/server
+      - /server/node_modules
+    env_file:
+      - /Users/faizahmedfarooqui/Sites/projects/gluestack/create-gluestack-app/packages/cgsa-boilerplate/backend/engine/.env.generated
+  nginx:
+    container_name: nginx
+    restart: always
+    build: /Users/faizahmedfarooqui/Sites/projects/gluestack/create-gluestack-app/packages/cgsa-boilerplate/meta/router/nginx
+    ports:
+      - 10088:10088
+      - 7001:7001
+    volumes:
+      - /Users/faizahmedfarooqui/Sites/projects/gluestack/create-gluestack-app/packages/cgsa-boilerplate/meta/router/nginx/nginx.conf:/etc/nginx/nginx.conf
+  website:
+    container_name: website
+    restart: unless-stopped
+    build: /Users/faizahmedfarooqui/Sites/projects/gluestack/create-gluestack-app/packages/cgsa-boilerplate/website
+    ports:
+      - 3100:9000
+    volumes:
+      - /Users/faizahmedfarooqui/Sites/projects/gluestack/create-gluestack-app/packages/cgsa-boilerplate:/gluestack
+      - /gluestack/website/node_modules/
+      - /gluestack/website/.next/
+  storybook:
+    container_name: storybook
+    restart: always
+    build: /Users/faizahmedfarooqui/Sites/projects/gluestack/create-gluestack-app/packages/cgsa-boilerplate/storybook
+    ports:
+      - 6006:9000
+    volumes:
+      - /Users/faizahmedfarooqui/Sites/projects/gluestack/create-gluestack-app/packages/cgsa-boilerplate:/gluestack
+      - /gluestack/storybook/node_modules
+    env_file:
+      - /Users/faizahmedfarooqui/Sites/projects/gluestack/create-gluestack-app/packages/cgsa-boilerplate/storybook/.env.generated
