@@ -32,8 +32,7 @@
     "@gluestack/glue-plugin-mobile-expo": "^0.0.5",
     "@gluestack/glue-plugin-router-nginx": "^0.0.x",
     "@gluestack/glue-plugin-storybook": "^1.1.x",
-    "@gluestack/glue-plugin-web": "^0.1.32",
-    "@gluestack/ui-next-adapter": "^2.0.2"
+    "@gluestack/glue-plugin-web": "^0.1.32"
   },
   "peerDependencies": {
     "@gluestack/framework": "^0.0.x"
