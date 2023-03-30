@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 
-import SharedHeader from "@project/components";
+import { GluestackUIProvider, Text } from "@project/components";
 
 const Meta = () => {
   return (
@@ -70,12 +70,23 @@ const Example = () => {
     </div>
   );
 };
+const GluestackComponents = () => {
+  return (
+    <GluestackUIProvider>
+      <Text color="$red500">Test1234</Text>
+      {/* <Button>
+    <Button.Text>Text</Button.Text>
+  </Button> */}
+    </GluestackUIProvider>
+  );
+};
 
 const Home: NextPage = () => {
   return (
     <div className={styles.parent}>
       <Meta />
-      <SharedHeader id="id" title="Ti111tle" />
+      <GluestackComponents />
+      {/* <SharedHeader id="id" title="Ti111tle" /> */}
       <Example />
     </div>
   );
