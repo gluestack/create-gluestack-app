@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import type { NextPage } from 'next';
 import Image from 'next/image';
+import type { NextPage } from 'next';
+
 import { Box, Text } from '@project/components';
 
 const Meta = () => {
