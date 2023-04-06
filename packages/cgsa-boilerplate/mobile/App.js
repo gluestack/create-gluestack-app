@@ -23,23 +23,15 @@ const FeatureCard = ({ SvgIcon, name, desc }) => {
   return (
     <Box
       flexDirection='column'
-      borderWidth='1px'
+      borderWidth={1}
       borderColor='$borderDark700'
       m='$2'
       p='$4'
       rounded='$md'
     >
       <Box alignItems='center' display='flex' flexDirection='row'>
-        {/* <Image
-          src={`/${iconSvg}`}
-          alt='document'
-          width={22}
-          height={22}
-          priority
-        /> */}
-
         <SvgIcon />
-        <Text fontSize='22px' color='$white' fontWeight='500' ml='$2'>
+        <Text fontSize={22} color='$white' fontWeight={500} ml='$2'>
           {name}
         </Text>
       </Box>
@@ -59,7 +51,7 @@ const Container = () => {
       <Box
         flex={1}
         alignItems='center'
-        justifyContent='spacebetween'
+        justifyContent='space-between'
         mt={60}
         mb={20}
       >
