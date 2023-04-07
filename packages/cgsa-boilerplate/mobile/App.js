@@ -1,6 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
-import GluesatckUIProvider, { Text, Box, Image } from '@project/components';
+import
+  GluesatckUIProvider, 
+  {
+    Text,
+    Box,
+    Image,
+    Center,
+    Divider
+  }
+  from '@project/components';
 import { SafeAreaView } from 'react-native';
 import RocketIcon from './Icons/RocketIcon';
 import DocumentDataIcon from './Icons/DocumentDataIcon';
@@ -23,23 +32,15 @@ const FeatureCard = ({ SvgIcon, name, desc }) => {
   return (
     <Box
       flexDirection='column'
-      borderWidth='1px'
+      borderWidth={1}
       borderColor='$borderDark700'
       m='$2'
       p='$4'
       rounded='$md'
     >
       <Box alignItems='center' display='flex' flexDirection='row'>
-        {/* <Image
-          src={`/${iconSvg}`}
-          alt='document'
-          width={22}
-          height={22}
-          priority
-        /> */}
-
         <SvgIcon />
-        <Text fontSize='22px' color='$white' fontWeight='500' ml='$2'>
+        <Text fontSize={22} color='$white' fontWeight={500} ml='$2'>
           {name}
         </Text>
       </Box>
@@ -59,10 +60,16 @@ const Container = () => {
       <Box
         flex={1}
         alignItems='center'
-        justifyContent='spacebetween'
+        justifyContent='space-between'
         mt={60}
         mb={20}
       >
+        <Center bg="black" h={200} w={300}>
+          <Text color="white" fontWeight="bold">
+            This is the center.
+          </Text>
+          <Divider />
+        </Center>
         <Box
           bg='#64748B33'
           py='$2'
@@ -75,7 +82,7 @@ const Container = () => {
             Get started by editing
           </Text>
           <Text color='$white' fontWeight='$medium' ml='$2'>
-            pages/index.tsx
+            App.js
           </Text>
         </Box>
         <Box flex={1} justifyContent='center' alignItems='center'>
