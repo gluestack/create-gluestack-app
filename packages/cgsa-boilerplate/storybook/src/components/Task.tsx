@@ -9,6 +9,7 @@ import GluestackUIProvider, {
   Progress,
   Heading,
   Pressable,
+  Divider,
   Link,
 } from "@project/components";
 import Wrapper from "../Wrapper";
