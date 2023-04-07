@@ -65,11 +65,11 @@ const Container = () => {
         mb={20}
       >
         <Center bg="black" h={200} w={300}>
-      <Text color="white" fontWeight="bold">
-        This is the center.
-      </Text>
-      <Divider />
-    </Center>
+          <Text color="white" fontWeight="bold">
+            This is the center.
+          </Text>
+          <Divider />
+        </Center>
         <Box
           bg='#64748B33'
           py='$2'
