@@ -28,6 +28,7 @@ export default function Task() {
         <Text color="$white" marginLeft={"$2"}>
           jhgfjygh
         </Text>
+        <Divider />
         <Spinner size="large" />
 
         <Progress value={60}>
@@ -50,7 +51,7 @@ export default function Task() {
       <Heading>I am a Heading</Heading>
 
       <Text>Text</Text>
-// error due to ts
+      // error due to ts
       {/* <Center bg="$red500" h={200} w={300}>
         <Text color="white" fontWeight="bold">
           This is the center.
